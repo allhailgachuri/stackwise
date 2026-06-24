@@ -29,22 +29,29 @@ Stackwise offers a comprehensive set of capabilities for inventory teams:
 ## Core product experience
 
 ### 1. Dashboard
+
 The dashboard gives a high-level operational view of the business. It highlights stock health, urgent attention areas, recent activity, and actionable insights.
 
 ### 2. Catalog management
+
 Users can create and manage inventory items, organize them by categories, track quantities, and filter the catalog by location, status, supplier, and more.
 
 ### 3. Purchase orders
+
 The purchase order workflow helps teams coordinate procurement from suppliers and track receiving activity.
 
 ### 4. Inventory requests
+
 Teams can submit and process requests for stock or materials, enabling internal workflow discipline.
 
 ### 5. Analytics and reporting
+
 The analytics experience turns movement and inventory data into useful business summaries, including supplier performance and cost analysis.
 
 ### 6. AI insights
+
 The app includes intelligence features such as:
+
 - Reorder recommendations
 - Demand forecasting-style projections
 - Anomaly detection for unusual movement patterns
