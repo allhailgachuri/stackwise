@@ -17,6 +17,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 import heroBox3d from "@/assets/hero-box.png";
 
 export const Route = createFileRoute("/")({
@@ -198,14 +199,16 @@ function StickyNav({ onTryDemo }: { onTryDemo: () => void }) {
           ))}
         </div>
 
-        {/* Desktop CTA - secondary style */}
-        <button
-          type="button"
-          onClick={onTryDemo}
-          className="hidden items-center gap-2 rounded-lg border border-border bg-muted/60 px-5 py-2 text-sm font-medium text-foreground transition-all hover:bg-muted md:inline-flex"
-        >
-          Try demo
-        </button>
+        <div className="hidden items-center gap-4 md:flex">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={onTryDemo}
+            className="hidden items-center gap-2 rounded-lg border border-border bg-muted/60 px-5 py-2 text-sm font-medium text-foreground transition-all hover:bg-muted md:inline-flex"
+          >
+            Try demo
+          </button>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -235,6 +238,9 @@ function StickyNav({ onTryDemo }: { onTryDemo: () => void }) {
               {l.label}
             </a>
           ))}
+          <div className="py-3">
+            <ThemeToggle />
+          </div>
           <button
             type="button"
             onClick={() => {
@@ -491,8 +497,9 @@ function LandingPage() {
       {/* ── Footer ───────────────────────────────────── */}
       <footer className="border-t border-border px-4 py-10 text-center">
         <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-          <Package className="h-4 w-4 text-primary" />
-          <span>Built with Stackwise · {new Date().getFullYear()}</span>
+          <span>
+            Built and developed by <a href="https://rushionsportfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">Rushion Gachuri</a> · {new Date().getFullYear()}
+          </span>
         </div>
       </footer>
     </div>

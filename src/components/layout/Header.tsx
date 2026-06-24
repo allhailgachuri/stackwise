@@ -25,6 +25,7 @@ import { NotificationCenter } from "@/components/notifications/NotificationCente
 import { useDemo } from "@/hooks/useDemo";
 import { useRole } from "@/hooks/useRole";
 import { PermissionGate } from "@/hooks/usePermissions";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const ROLE_BADGE_STYLES: Record<string, string> = {
   admin: "bg-primary/15 text-primary border-primary/20",
@@ -92,6 +93,7 @@ export function Header() {
         </Button>
       </PermissionGate>
 
+      <ThemeToggle />
       <NotificationBell onClick={() => setNotifOpen(true)} />
 
       <DropdownMenu>

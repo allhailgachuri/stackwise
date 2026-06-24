@@ -6,19 +6,23 @@ import { ErrorBoundary } from "@/components/shared/ErrorBoundary";
 
 import "../styles.css";
 
+import { ThemeProvider } from "@/components/theme-provider";
+
 export const Route = createRootRoute({
   component: RootComponent,
 });
 
 function RootComponent() {
   return (
-    <DemoProvider>
-      <RoleProvider>
-        <ErrorBoundary>
-          <Outlet />
-        </ErrorBoundary>
-        <Toaster position="bottom-right" richColors />
-      </RoleProvider>
-    </DemoProvider>
+    <ThemeProvider defaultTheme="system" storageKey="stackwise-theme" enableSystem disableTransitionOnChange>
+      <DemoProvider>
+        <RoleProvider>
+          <ErrorBoundary>
+            <Outlet />
+          </ErrorBoundary>
+          <Toaster position="bottom-right" richColors />
+        </RoleProvider>
+      </DemoProvider>
+    </ThemeProvider>
   );
 }
