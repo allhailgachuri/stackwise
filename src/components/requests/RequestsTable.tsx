@@ -52,7 +52,7 @@ export function RequestsTable({ requests, onRowClick, showRequestor = false, pre
   }
 
   return (
-    <div className="overflow-x-auto rounded-md border border-border bg-white">
+    <div className="overflow-x-auto rounded-md border border-border bg-card">
       <Table>
         <TableHeader>
           <TableRow>

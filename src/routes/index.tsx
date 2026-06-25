@@ -297,7 +297,7 @@ function FeatureTabsSection() {
               onClick={() => setActiveTab(i)}
               className={`shrink-0 rounded-lg px-6 py-3 text-left text-sm font-medium transition-all lg:px-6 lg:py-4 ${
                 activeTab === i
-                  ? "bg-white text-foreground shadow-md ring-1 ring-border"
+                  ? "bg-background text-foreground shadow-md ring-1 ring-border"
                   : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
               }`}
             >

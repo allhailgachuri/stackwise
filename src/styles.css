@@ -174,6 +174,12 @@
   --stock-low: oklch(0.70 0.12 75);
   --stock-out: oklch(0.65 0.22 25);
   --amber-accent: oklch(0.70 0.12 75);
+
+  /* Metric tints */
+  --metric-healthy-bg: oklch(0.24 0.04 155);
+  --metric-warning-bg: oklch(0.24 0.04 75);
+  --metric-danger-bg: oklch(0.24 0.04 25);
+  --metric-neutral-bg: oklch(0.24 0.03 162);
 }
 
 @theme inline {

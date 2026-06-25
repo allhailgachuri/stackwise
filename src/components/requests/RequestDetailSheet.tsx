@@ -132,7 +132,7 @@ export function RequestDetailSheet({
             <p className="mb-2 text-sm font-medium text-foreground">
               Line Items ({request.items.length})
             </p>
-            <div className="overflow-x-auto rounded-md border border-border bg-white">
+            <div className="overflow-x-auto rounded-md border border-border bg-card">
               <Table>
                 <TableHeader>
                   <TableRow>
