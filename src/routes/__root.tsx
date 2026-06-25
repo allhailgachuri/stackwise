@@ -14,7 +14,7 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="stackwise-theme" enableSystem disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="system" storageKey="stackwise-theme" enableSystem disableTransitionOnChange>
       <DemoProvider>
         <RoleProvider>
           <ErrorBoundary>
